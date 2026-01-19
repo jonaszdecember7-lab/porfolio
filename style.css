@@ -1,0 +1,477 @@
+  @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+
+  section {
+      scroll-margin-top: 100px;
+  }
+
+  html {
+      scroll-behavior: smooth;
+  }
+
+  body {
+      font-family: 'Alata', Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('images/endless-constellation.svg');
+      background-color: #191919;
+  }
+
+  @keyframes FadeIn {
+      0% {
+          color: black;
+          scale: 90%;
+      }
+
+      100% {
+          color: white;
+          scale: 100%;
+      }
+  }
+
+  main {
+      display: flex;
+      flex-direction: column;
+  }
+
+
+  h1,
+  h2,
+  h3 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 200;
+      color: rgb(214, 192, 69);
+  }
+
+  h1 {
+      display: flex;
+      justify-content: center;
+      font-size: 75px;
+      animation-name: FadeIn;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      margin-top: 22px;
+  }
+
+  h3 {
+      font-weight: 400;
+      font-size: 22px;
+      margin: 10px 0;
+      text-align: center;
+  }
+
+  h2 {
+      font-weight: 350;
+      font-size: 30px;
+      margin: 10px 0;
+      text-align: center;
+  }
+
+  nav {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+      background-color: #14141473;
+      padding: 20px;
+      gap: 50px;
+      position: fixed;
+      top: 0px;
+      z-index: 2;
+  }
+
+  nav a {
+      color: white;
+      text-decoration: none;
+  }
+
+  nav a:hover {
+      color: rgb(214, 192, 69);
+  }
+
+  p {
+      font-family: 'Alata', Arial, Helvetica, sans-serif;
+      font-weight: 100;
+      color: white;
+  }
+
+  span {
+      color: rgb(214, 192, 69);
+  }
+
+  #intro {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 20px 100px 20px;
+  }
+
+  #intro p {
+      color: rgba(255, 255, 255, 0.459);
+      align-self: center;
+      padding-top: 5px;
+      animation-name: FadeIn;
+      animation-duration: 4s;
+      animation-fill-mode: forwards;
+  }
+
+  .projects {
+      margin: 0 auto;
+      min-height: 100vh;
+      align-items: center;
+      padding-top: 10vh;
+      justify-content: center;
+  }
+
+
+
+  .project-area {
+      display: grid;
+      grid-template-columns: 450px 450px;
+      grid-template-rows: 410px 410px;
+      gap: 20px;
+  }
+
+  .projects h2 {
+      display: flex;
+      justify-content: center;
+  }
+
+
+
+
+  .project-card {
+      width: 100%;
+      height: auto;
+      max-width: 500px;
+      color: white;
+      text-decoration: none;
+      position: relative;
+      transition: transform 0.3s ease, filter 0.2s ease;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+
+  }
+
+  .project-card:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(0 0 3em #000000);
+
+  }
+
+
+  .project-name {
+      color: rgb(255, 241, 161);
+      padding-bottom: 3px;
+      font-size: 22px;
+  }
+
+
+  .project-card img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 15px;
+      display: block;
+  }
+
+  .project-buttons {
+      pointer-events: auto;
+  }
+
+
+  .project-info {
+      position: absolute;
+      bottom: 45px;
+      left: 15px;
+      right: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      pointer-events: none;
+
+  }
+
+
+  .live-button {
+      padding: 10px 12px;
+      border-radius: 8px;
+      width: 105px;
+      font-size: 14px;
+      font-family: 'Alata', Arial, Helvetica, sans-serif;
+      border: 1px solid rgb(214, 192, 69);
+      background: linear-gradient(145deg, #222, #111);
+      color: rgb(214, 192, 69);
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+  }
+
+  .live-button:hover {
+      transform: translateY(-2px) scale(1.05);
+      background: rgb(214, 192, 69);
+      color: black;
+      box-shadow: 0 0 12px rgba(214, 192, 69, 0.4);
+  }
+
+
+
+  .project-toolkit {
+      margin-bottom: 5px;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 6px;
+      font-size: 14px;
+      border-radius: 10px;
+      align-self: center;
+      margin: 0;
+  }
+
+  .project-toolkit span {
+      color: white;
+  }
+
+
+
+
+
+  .infomation-projects {
+      display: flex;
+  }
+
+  .project-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-bottom: 20px;
+  }
+
+
+  .toolkit {
+      margin: 0 auto;
+      min-height: 100vh;
+      align-items: center;
+      color: white;
+      padding-top: 12vh;
+      max-width: 1500px;
+      width: 100%;
+      animation: fadeUp linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%;
+  }
+
+  @keyframes fadeUp {
+      from {
+          opacity: 0;
+          transform: translateY(40px) scale(0.5);
+      }
+
+      to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+      }
+  }
+
+  .toolkit-area {
+      display: flex;
+      gap: 100px;
+      flex-wrap: wrap;
+      margin: 45px;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  .toolkit-info,
+  .toolkit-info-some {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 5px;
+  }
+
+
+
+  .toolkit-info-some img {
+      width: 50px;
+      height: auto;
+      transition: transform 0.3s ease;
+      transition: filter 300ms;
+      opacity: 0.75;
+
+  }
+
+  .toolkit-info img {
+      width: 80px;
+      height: auto;
+      transition: transform 0.3s ease;
+      transition: filter 300ms;
+  }
+
+  .toolkit img:hover {
+      filter: drop-shadow(0 0 2em #646cffaa);
+  }
+
+
+  #aboutme {
+      margin: 0 auto;
+      font-size: 18px;
+      margin-bottom: 100px;
+      max-width: 1050px;
+      width: 100%;
+  }
+
+
+  .language-area {
+      display: flex;
+      gap: 50px;
+      flex-wrap: wrap;
+      margin: 45px;
+      align-self: flex-start;
+      justify-content: center;
+      flex: wrap;
+
+  }
+
+  .toolkit-info p {
+      margin-top: 6px;
+  }
+
+  .down-arrow {
+      display: flex;
+      margin: 0 auto;
+      width: 50px;
+      height: 50px;
+      margin-top: 2%;
+  }
+
+  .contact {
+      margin: 0 auto;
+      min-height: 100vh;
+      align-items: center;
+      color: white;
+      padding-top: 40vh;
+      max-width: 1500px;
+      width: 100%;
+      animation: fadeUp linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%;
+  }
+
+
+  .contact p {
+      text-align: center;
+  }
+
+  .contact-button {
+      border: 1px rgb(214, 192, 69) solid;
+      background-color: #333333;
+      padding: 10px 20px;
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      border-radius: 10px;
+      transition: transform 0.2s ease;
+  }
+
+  .contact-button:hover {
+      background-color: rgb(214, 192, 69);
+      color: rgb(0, 0, 0);
+      transform: scale(1.05);
+  }
+
+
+  .contact a {
+      color: white;
+      text-decoration: none;
+      text-align: center;
+  }
+
+  .contact-area {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+  }
+
+
+
+  .arrow-link-image {
+      height: auto;
+      width: 20px;
+  }
+
+
+  .button-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+  }
+
+  .contact-button:hover .button-left {
+      color: rgb(0, 0, 0);
+  }
+
+  .icon-image {
+      height: auto;
+      width: 25px;
+  }
+
+  footer {
+      display: flex;
+      justify-content: center;
+  }
+
+  /*-------------------------------Query--------------------------------------*/
+  @media (max-width: 750px) {
+
+      nav {
+          display: none;
+      }
+
+      h1 {
+          font-size: 48px;
+          text-align: center;
+          padding: 0 15px;
+      }
+
+      p {
+          max-width: 90%;
+          margin: 0 auto;
+      }
+
+      .project-area {
+          grid-template-columns: 1fr;
+          gap: 20px;
+      }
+
+      .project-card {
+          background-color: rgba(255, 255, 255, 0.171);
+          height: 410px;
+          border-radius: 10px;
+      }
+
+      .project-card img {
+          height: 260px;
+      }
+
+      .project-info {
+          bottom: 0px;
+      }
+
+      body {
+          margin: 10px;
+      }
+
+      .down-arrow {
+          display: none;
+      }
+  }
