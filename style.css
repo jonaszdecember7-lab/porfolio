@@ -83,7 +83,27 @@
       position: fixed;
       top: 0px;
       z-index: 2;
+      align-items: center;
   }
+
+  #language-toggle {
+      width: 30px;
+      height: 30px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      background-image: url(images/PLFLAG.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      right: 30px;
+  }
+
+  #language-toggle.polish-language {
+      background-image: url(images/UKFLAG.png);
+  }
+
 
   nav a {
       color: white;
@@ -447,6 +467,7 @@
       p {
           max-width: 90%;
           margin: 0 auto;
+          text-align: center;
       }
 
       .project-area {

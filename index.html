@@ -15,6 +15,7 @@
             <a href="#projects">Projects</a>
             <a href="#toolkit">Toolkit / About Me</a>
             <a href="#contact">Contact</a>
+            <button id="language-toggle"></button>
         </nav>
     </header>
 
@@ -153,7 +154,7 @@
         <section class="toolkit" id="toolkit">
             <div id="aboutme">
                 <h2>&lt; About Me /&gt;</h2>
-                <p>I'm a frontend web developer passionate about crafting clean, responsive, and intuitive websites that
+                <p id="about-me-paragraph">I'm a frontend web developer passionate about crafting clean, responsive, and intuitive websites that
                     are accessible to everyone. I love turning ideas into visually appealing, user-friendly experiences.
                     <br> <br>
                     Currently improving my skills through personal projects and continuous learning. I'm a fast learner
@@ -191,12 +192,12 @@
                 </div>
             </div>
             <h3>Somewhat familiar with / Currently learning</h3>
-             <div class="toolkit-area">
-                  <div class="toolkit-info-some">
+            <div class="toolkit-area">
+                <div class="toolkit-info-some">
                     <img src="images/typescript.svg" alt="TypeScript Logo">
                     <p>TypeScript</p>
-                </div> 
-            </div> 
+                </div>
+            </div>
             <h2>Languages I speak:</h2>
             <div class="language-area">
                 <div class="toolkit-info">
@@ -253,4 +254,5 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+    <script src="script.js"></script>
 </body>
