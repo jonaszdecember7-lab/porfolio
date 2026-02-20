@@ -13,8 +13,8 @@ When I'm not coding, I'm travelling the world (most recently been to Italy) or s
     },
     pl: {
         introHeader: "Cześć, jestem Jonasz.",
-        introParagraph: "Frontendowy deweloper, pasjonujący się tworzeniem czystych i dostępnych doświadczeń webowych.",
-        aboutMe: `Jestem frontendowym deweloperem stron internetowych, pasjonującym się tworzeniem czystych, responsywnych i intuicyjnych stron, które są dostępne dla każdego.<br><br>
+        introParagraph: "Frontend deweloper, pasjonujący się tworzeniem czystych i dostępnych doświadczeń webowych.",
+        aboutMe: `Jestem frontend deweloperem stron internetowych, pasjonującym się tworzeniem czystych, responsywnych i intuicyjnych stron, które są dostępne dla każdego.<br><br>
 Uwielbiam przekształcać pomysły w estetyczne i przyjazne dla użytkownika doświadczenia.<br><br>
 Obecnie rozwijam swoje umiejętności poprzez projekty osobiste i ciągłą naukę. Szybko się uczę i z entuzjazmem dołączę do zespołu, w którym mogę wnosić wkład i rozwijać się, tworząc razem wspaniałe produkty.<br><br>
 Gdy nie programuję, podróżuję po świecie (ostatnio byłem we Włoszech) lub spędzam czas, ciesząc się grami wideo.`,
