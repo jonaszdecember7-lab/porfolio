@@ -217,7 +217,8 @@
       pointer-events: none;
       align-items: center;
       padding: 10px;
-      background-color: rgba(255, 255, 255, 0.432);
+      background-color: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(8px);
       border-radius: 20px;
   }
 
@@ -483,7 +484,7 @@
 
       .project-card {
           background-color: rgba(255, 255, 255, 0.048);
-          height: 410px;
+          min-height: 410px;
           border-radius: 10px;
       }
 
