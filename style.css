@@ -151,9 +151,12 @@
 
   .project-area {
       display: grid;
-      grid-template-columns: 450px 450px;
-      grid-template-rows: 410px 410px;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
       gap: 20px;
+      width: 100%;
+      max-width: 1000px;
+      justify-content: center;
+      margin: auto;
   }
 
   .projects h2 {
@@ -194,7 +197,8 @@
 
   .project-card img {
       width: 100%;
-      height: 350px;
+      max-height: 350px;
+      height: 100%;
       object-fit: cover;
       border-radius: 15px;
       display: block;
@@ -475,7 +479,7 @@
       }
 
       .project-card {
-          background-color: rgba(255, 255, 255, 0.171);
+          background-color: rgba(255, 255, 255, 0.048);
           height: 410px;
           border-radius: 10px;
       }
@@ -486,10 +490,28 @@
 
       .project-info {
           bottom: 0px;
+          margin-bottom: 10px;
+      }
+
+      .project-toolkit {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          max-width: 100px;
+      }
+
+      .project-buttons {
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
       }
 
       body {
           margin: 10px;
+      }
+
+      .project-name {
+        margin-top: 15px;
       }
 
       .down-arrow {
