@@ -37,6 +37,11 @@
   main {
       display: flex;
       flex-direction: column;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 2rem;
+      padding-left: 2rem;
   }
 
 
@@ -453,9 +458,24 @@
       width: 25px;
   }
 
-  footer {
+  .footer-content {
       display: flex;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 5rem;
+      padding-left: 5rem;
+      font-size: .75rem;
+      line-height: 1rem;
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+  }
+
+  .contact-footer {
+
   }
 
   /*-------------------------------Query--------------------------------------*/
