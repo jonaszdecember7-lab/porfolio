@@ -458,7 +458,7 @@
       width: 25px;
   }
 
-  .footer-content {
+  footer {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -472,11 +472,14 @@
       line-height: 1rem;
       padding-top: 1.25rem;
       padding-bottom: 1.25rem;
-  }
-
-  .contact-footer {
 
   }
+
+  .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
 
   /*-------------------------------Query--------------------------------------*/
   @media (max-width: 750px) {
