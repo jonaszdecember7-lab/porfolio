@@ -312,7 +312,6 @@
   .toolkit-area {
       display: flex;
       gap: 100px;
-      flex-wrap: wrap;
       margin: 45px;
       justify-content: center;
       flex-wrap: wrap;
@@ -519,16 +518,25 @@
 
       .project-toolkit {
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           width: 100%;
-          max-width: 100px;
+          max-width: 200px;
+          text-align: center;
+          align-items: center;
+          align-self: center;
+          justify-content: center;
+          margin-top: 5px;
       }
+
+
 
       .project-buttons {
           display: flex;
           flex-direction: row;
           padding: 5px;
           align-items: flex-end;
+          margin-top: 15px;
+
       }
 
       body {
@@ -537,6 +545,7 @@
 
       .project-name {
           margin-top: 15px;
+          font-size: 17px;
       }
 
       .down-arrow {
@@ -547,29 +556,25 @@
           background-color: transparent;
           bottom: 10px;
           align-self: center;
-
+          backdrop-filter: none;
+          flex-direction: column-reverse;
       }
+
+      .toolkit-area {
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+          gap: 50px;
+      }
+
+ 
   }
 
   @media (max-width: 395px) {
-      .project-buttons {
-          display: flex;
-          flex-wrap: wrap;
-          align-items: flex-end;
-          flex-direction: column;
-      }
+
 
       .project-name {
-          font-size: 15px;
+          font-size: 13px;
       }
 
-      .project-toolkit {
-          flex-direction: column;
-          width: 100%;
-          max-width: 80px;
-      }
 
-      .project-name {
-          margin-top: 5px;
-      }
   }
